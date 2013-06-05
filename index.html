@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Update JSON</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <section>
+      <div class="content">
+        <div class="save-notice"> Form saved! </div>
+        <div class="line first-name clearfix">
+          <div>First Name: </div>
+          <input type="text" id="firstName" data-bind="value: firstName" />
+        </div>
+
+        <div class="line last-name clearfix">
+          <div>Last Name: </div>
+          <input type="text" id="lastName" data-bind="value: lastName" />
+        </div>
+
+        <div class="line first-address1 clearfix">
+           <div>Address Line 1: </div>
+          <input type="text" id="addressLine1" data-bind="value: addressLine1" />
+        </div>
+
+        <div class="line first-address2 clearfix">
+          <div>Address Line 2: </div>
+          <input type="text" id="addressLine2" data-bind="value: addressLine2" />
+        </div>
+
+        <div class="line suburb clearfix">
+          <div>Suburb: </div>
+          <input type="text" id="suburb" data-bind="value: suburb" />
+        </div>
+
+        <div class="line state clearfix">
+          <div>State: </div>
+          <input type="text" id="state" data-bind="value: state" />
+        </div>
+
+        <div class="line post-code clearfix">
+          <div>Post Code: </div>
+          <input type="text" id="postCode" data-bind="value: postcode" />
+        </div>
+
+        <div class="line birth-date clearfix">
+          <div>Date Of Birth: </div>
+          <input type="text" id="dob" data-bind="value: dateOfBirth" />
+        </div>
+
+        <hr />
+        <div class="clearfix">
+          <a class="button gray f-left" id="clearForm" data-bind="click: clearForm">Clear</a>
+          <a class="button gray f-left" id="refreshForm" data-bind="click: refreshForm">Restore</a>
+          <a class="button green f-right" id="updateForm" data-bind="click: saveToStorage">Save</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.3.5/knockout.mapping.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
