@@ -41,7 +41,7 @@ var Form = (function($, form){
   }
 
   function extendFormModel(model){
-    model.visibleNotice = ko.obser
+    model.visibleNotice = ko.observable;
     model.refreshForm = function(){
       var jsonData = getFromStorage();
       ko.mapping.fromJSON(jsonData, model)
